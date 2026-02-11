@@ -6,6 +6,9 @@ on:
     - cron: "17 * * * *"
   workflow_dispatch:  # lets you run it manually once if you want
 
+permissions:
+  contents: write
+
 jobs:
   run-script:
     runs-on: ubuntu-latest
