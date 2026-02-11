@@ -2,9 +2,9 @@ name: Run Python Hourly (7 days)
 
 on:
   schedule:
-    # Runs every hour at minute 17 (more reliable than minute 0)
+    # on the hour takes longer to process, 17 min is faster
     - cron: "17 * * * *"
-  workflow_dispatch:  # lets you run it manually once if you want
+  workflow_dispatch: #to test
 
 permissions:
   contents: write
