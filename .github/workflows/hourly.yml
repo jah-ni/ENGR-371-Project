@@ -25,7 +25,7 @@ jobs:
 
       - name: Run script
         run: |
-          ENGR371_CODE.py
+          python ENGR371_CODE.py
 
       - name: Commit CSV results
         run: |
